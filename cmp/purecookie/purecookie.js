@@ -1,7 +1,5 @@
 // --- Config --- //
-var purecookieTitle = "Cookies."; // Title
 var purecookieDesc = "We only use technical required cookies."; // Description
-var purecookieLink = ''; //'<a href="cookie-policy.html" target="_blank">What for?</a>'; // Cookiepolicy link
 var purecookieButton = "Okay"; // Button text
 // ---        --- //
 
@@ -9,7 +7,7 @@ var purecookieButton = "Okay"; // Button text
 function pureFadeIn(elem, display){
   var el = document.getElementById(elem);
   el.style.opacity = 0;
-  el.style.display = display || "block";
+  el.style.display = display || "flex";
 
   (function fade() {
     var val = parseFloat(el.style.opacity);
@@ -57,7 +55,7 @@ function eraseCookie(name) {
 
 function cookieConsent() {
   if (!getCookie('purecookieDismiss')) {
-    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + '</a></div></div>';
+    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieDesc">' + purecookieDesc + '</div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + '</a></div></div>';
 	pureFadeIn("cookieConsentContainer");
   }
 }
