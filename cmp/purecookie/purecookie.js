@@ -1,5 +1,5 @@
 // --- Config --- //
-var purecookieDesc = "We only use technical required cookies."; // Description
+var purecookieDesc = "We only use technically necessary cookies."; // Description
 var purecookieButton = "Okay"; // Button text
 // ---        --- //
 
