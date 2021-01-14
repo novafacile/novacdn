@@ -11,8 +11,14 @@
 <body>
 
   <div style="width:100%;text-align:center;margin-top:100px;">
-    include on DOM load: <code>function() { cookieConsent(); };</code> 
+    include on DOM load: <code>cookieConsent();</code> 
   </div>
+
+<script type="text/javascript" charset="utf-8">
+  document.addEventListener("DOMContentLoaded", (event) => {
+    cookieConsent();
+  });
+</script>
 
 </body>
 </html>
