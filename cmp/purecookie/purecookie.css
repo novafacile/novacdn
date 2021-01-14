@@ -6,12 +6,11 @@
   width: 100%  !important;
   min-height: 20px;
   box-sizing: border-box;
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
   background: #232323;
   overflow: hidden;
   display: none;
   color: #FFFFFF;
-  text-align: center;
   font-family: OpenSans, arial, "sans-serif";
   font-size: 1rem;
   justify-content:center;
