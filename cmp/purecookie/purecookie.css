@@ -1,7 +1,7 @@
 .cookieConsentContainer {
   z-index: 999;
   position: fixed;
-  top: 0px !important;
+  bottom: 0px !important;
   left: 0px !important;
   width: 100%  !important;
   min-height: 20px;
