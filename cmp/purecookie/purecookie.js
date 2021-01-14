@@ -17,10 +17,10 @@ function pureFadeIn(elem, display){
     }
   })();
 };
+
 function pureFadeOut(elem){
   var el = document.getElementById(elem);
   el.style.opacity = 1;
-
   (function fade() {
     if ((el.style.opacity -= .02) < 0) {
       el.style.display = "none";
@@ -39,6 +39,7 @@ function setCookie(name,value,days) {
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
+
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -64,3 +65,5 @@ function purecookieDismiss() {
   setCookie('purecookieDismiss','1',7);
   pureFadeOut("cookieConsentContainer");
 }
+
+cookieConsent();
