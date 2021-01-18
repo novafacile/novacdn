@@ -2,7 +2,7 @@
  * novaConsent
  * Simple Consent Info Layer
  * @version 1.0
- * @info currently for only technically neccesary cookies
+ * @info currently for only technically necessary cookies
  * @author novafacile OÜ
  * @copyright 2021 by novafacile OÜ
  * @license MIT
@@ -13,7 +13,7 @@ function novaConsentObj() {
    var config = {
     cookieName: "novaConsent",
     cookieTimeout: 365,
-    infoText: "We only use technically neccesary cookies.",
+    infoText: "We only use technically necessary cookies.",
     acceptButtonText: "Okay",
     moreInfo: "",
     SameSite: "Strict"
